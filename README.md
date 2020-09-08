@@ -1,9 +1,9 @@
-# Bucklescript - React
+# Spin ReScript
 
-React application in Reason.
+A [Spin](https://github.com/tmattio/spin) template to generate new ReScript project.
 
 ```bash
-spin new bs-react
+spin new https://github.com/tmattio/spin-rescript.git
 ```
 
 ## Acknowledgments
