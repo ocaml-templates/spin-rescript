@@ -1,5 +1,5 @@
-(name bs-react)
-(description "React application in Reason")
+(name spin-rescript)
+(description "ReScript application")
 
 (config project_name
   (input (prompt "Project name")))
@@ -21,6 +21,12 @@
 (config username
   (input (prompt "Name of the author")))
 
+(config syntax
+  (select
+    (prompt "Which syntax do you use?")
+    (values ReScript Reason))
+  (default ReScript))
+
 (config css_framework
   (select
     (prompt "Which CSS framework do you use?")
@@ -40,6 +46,14 @@
 (ignore
   (files .github/*)
   (enabled_if (neq :ci_cd Github)))
+
+(ignore
+  (files src/*.re src/*.rei)
+  (enabled_if (neq :syntax Reason)))
+
+(ignore
+  (files */*.res */*.resi)
+  (enabled_if (neq :syntax ReScript)))
 
 (post_gen
   (actions 
