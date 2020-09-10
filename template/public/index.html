@@ -3,11 +3,27 @@
 
 <head>
   <meta charset="utf-8" />
-  <link rel="icon" href="favicon.ico" />
+  <link href="apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180" />
+  <link href="favicon-32x32.png" rel="icon" sizes="32x32" type="image/png" />
+  <link href="favicon-16x16.png" rel="icon" sizes="16x16" type="image/png" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="theme-color" content="#000000" />
+  <meta name="theme-color" content="#ffffff" />
   <meta name="description" content="{{ project_description }}" />
-  <link rel="apple-touch-icon" href="logo192.png" />
+
+  <!-- Inter font -->
+  <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+  <style>
+    html {
+      font-family: 'Inter', sans-serif;
+    }
+
+    @supports (font-variation-settings: normal) {
+      html {
+        font-family: 'Inter var', sans-serif;
+      }
+    }
+  </style>
+
   <!--
     manifest.json provides metadata used when your web app is installed on a
     user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/

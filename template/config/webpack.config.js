@@ -134,7 +134,7 @@ module.exports = {
           {% if css_framework == 'TailwindCSS' %}{
             loader: 'postcss-loader',
             options: {
-              config: { path: paths.appConfig },
+              postcssOptions: { config: path.resolve(paths.appConfig, 'postcss.config.js') },
               sourceMap: isEnvProduction
             },
           },
