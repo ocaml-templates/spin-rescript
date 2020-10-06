@@ -48,7 +48,7 @@
   (enabled_if (neq :ci_cd Github)))
 
 (ignore
-  (files src/*.re src/*.rei)
+  (files */*.re */*.rei)
   (enabled_if (neq :syntax Reason)))
 
 (ignore
