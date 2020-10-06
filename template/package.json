@@ -64,6 +64,6 @@
     "start:webpack": "webpack-dev-server --config config/webpack.config.js --open",
     "clean": "bsb -clean-world",
     "test": "bsb -make-world && jest",
-    "format": "bsrefmt --in-place */**/*.re */*.re"
+    "format": "bsrefmt --in-place */**/*.re */*.re  */**/*.res */*.res */**/*.rei */*.rei  */**/*.resi */*.resi"
   }
 }
