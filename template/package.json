@@ -28,7 +28,7 @@
     "@fullhuman/postcss-purgecss": "^2.3.0",{% endif %}
     "@glennsl/bs-jest": "^0.5.1",
     {%- if css_framework == 'None' %}
-    "bs-css-emotion": "^13.0.0",{% endif %}
+    "bs-css-emotion": "^2.0.0",{% endif %}
     "bs-platform": "^8.2.0",
     "bs-react-testing-library": "^0.7.3",
     "bs-webapi": "^0.19.1",
