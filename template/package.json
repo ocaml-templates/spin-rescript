@@ -59,7 +59,7 @@
   },
   "scripts": {
     "build": "bsb -make-world && NODE_ENV=production webpack --config config/webpack.config.js && cp -n public/* build/ | true",
-    "start": "concurrently -c --kill-others 'yarn start:bsb' 'yarn start:webpack'",
+    "start": "bsb -clean-world && bsb -make-world && concurrently -c --kill-others 'bsb -make-world -w' 'webpack-dev-server --config config/webpack.config.js --open'",
     "start:bsb": "bsb -make-world -w",
     "start:webpack": "webpack-dev-server --config config/webpack.config.js --open",
     "clean": "bsb -clean-world",
